@@ -12,6 +12,8 @@
             <h1>Lista de Usuarios</h1>
             <ul>
                 <% usuarios.forEach(usuario => { %>
+                    <span>ID del usuario:</span><br>
+                    <span><%= usuario.id %></span><br>
                     <span>Nombre del usuario:</span><br>
                     <span><%= usuario.nombre %></span><br>
 
@@ -25,14 +27,13 @@
             <h1>Lista de Objetos</h1>
             <ul>
                 <% objetos.forEach(objeto => { %>
+                    <span>ID del usuario:</span><br>
+                    <span><%= objeto.user_id %></span><br>
                     <span>Nombre del objeto:</span><br>
                     <span><%= objeto.nombre %></span><br>
 
                     <span>Descripcion del objeto:</span><br>
-                    <span><%= objeto.descripcion %></span><br>
-                    
-                    <span>Foto del objeto:</span><br>
-                    <span><%= objeto.foto %></span><br><br><br><br>
+                    <span><%= objeto.descripcion %></span><br><br><br>
                 <% }); %>
             </ul>
         </div>

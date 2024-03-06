@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
     <title>DASHBOARD</title>
 </head>
 <body>
     <h1>Tus Tareas</h1>
+    <a href="/anadir_tarea/<%= userid %>">NUEVA TAREA</a>
+    <div>
+        <h1>Lista de Objetos</h1>
+        <ul>
+            <% objetos.forEach(objeto => { %>
+                <span>Nombre del objeto:</span><br>
+                <span><%= objeto.nombre %></span><br>
+
+                <span>Descripcion del objeto:</span><br>
+                <span><%= objeto.descripcion %></span><br><br><br>
+            <% }); %>
+        </ul>
+    </div>
 </body>
 </html>

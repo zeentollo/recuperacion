@@ -1,9 +1,12 @@
 const express = require('express');
 const routes = express.Router();
+const { objetos_usuario } = require('./db');
 
-routes.get('/:userid', (req, res) => {
+routes.get('/:userid', async (req, res) => {
     const userid = req.params.userid;
-    res.render('dashboard');
+    const objetos = await objetos_usuario(userid);
+
+    res.render('dashboard', { objetos: objetos, userid: userid });
 });
 
-module.exports = routes;
+module.exports = routes

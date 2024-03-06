@@ -14,8 +14,6 @@ routes.post('/', async (req, res) => {
 
     const usuario_login = await comprobar_user(email, pass);
 
-    console.log(usuario_login);
-
     if (usuario_login === 0) {
         res.redirect('/admin');
     }else if (usuario_login) {

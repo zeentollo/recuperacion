@@ -17,6 +17,7 @@ body{
 h1{
   font-size: 40px;
   font-weight: bold;
+  margin: 20px;
 }
 
 input{
@@ -38,5 +39,7 @@ a:hover{
 
 section{
   display: flex;
+}
+div{
   margin: 40px;
 }

@@ -8,4 +8,5 @@ routes.get('/', async (req, res) => {
 
     res.render('admin', { usuarios: usuarios, objetos: objetos });
 });
+
 module.exports = routes

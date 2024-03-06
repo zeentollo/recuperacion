@@ -55,10 +55,10 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `email`, `pass`) VALUES
-(0, 'admin', 'admin@admin', '$2a$08$pIRFHQOxVRIUewX.OdRBV.obhaSSuT0AytAGI1oBao/Yl6p9w2fza'),
-(4, 'daniel', 'daniel@daniel.com', '$2a$08$66EARNtJYz57GVOZuNkVwephATef9K03UAeXXWtApnlNB1pY6gV9m'),
-(5, 'luis', 'luis@luis.com', '$2a$08$l5vXVpFq0XAEKu0A9xsNR.8FeF..D4xxqqPNbhgxVq/aF4kq1jhtq'),
-(6, 'prueba', 'prueba@prueba.com', '$2a$08$FZgN7.XFf6gIAYlcdYlv4.x4nlJZXzxuJ1h0crzo2LM4ARf5pBH3.');
+(0, 'admin', 'admin@admin.com', '$2a$08$pIRFHQOxVRIUewX.OdRBV.obhaSSuT0AytAGI1oBao/Yl6p9w2fza'),
+(1, 'daniel', 'daniel@daniel.com', '$2a$08$66EARNtJYz57GVOZuNkVwephATef9K03UAeXXWtApnlNB1pY6gV9m'),
+(2, 'luis', 'luis@luis.com', '$2a$08$l5vXVpFq0XAEKu0A9xsNR.8FeF..D4xxqqPNbhgxVq/aF4kq1jhtq'),
+(3, 'prueba', 'prueba@prueba.com', '$2a$08$FZgN7.XFf6gIAYlcdYlv4.x4nlJZXzxuJ1h0crzo2LM4ARf5pBH3.');
 
 --
 -- Índices para tablas volcadas

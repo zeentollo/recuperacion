@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const cookieParser = require('cookie-parser');
 const port = 3000
 
 const app = express();
@@ -10,10 +9,9 @@ const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
 const recuperarRouter = require('./routes/recuperar');
 const adminRouter = require('./routes/admin');
-const homeRouter = require('./routes/home');
-const menuRouter = require('./routes/menu');
 const ver404Router = require('./routes/ver404');
 const dashboardRouter = require('./routes/dashboard');
+const anadir_tareaRouter = require('./routes/anadir_tarea');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views/'));
@@ -28,16 +26,18 @@ app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/recuperar', recuperarRouter);
 app.use('/admin', adminRouter);
-app.use('/home', homeRouter);
-app.use('/menu', menuRouter);
 app.use('/ver404', ver404Router);
 app.use('/dashboard', dashboardRouter);
+app.use('/anadir_tarea', anadir_tareaRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+/*
 app.use(function(req, res) {
   res.status(404).redirect('ver404');
 });
+
+*/
 
 app.use(express.static('public'));
 
