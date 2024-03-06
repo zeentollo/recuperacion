@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(197, 197, 197);
+}
+
+h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+input{
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+section{
+  display: flex;
+}

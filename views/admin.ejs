@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Lista de Usuarios</h1>
+            <ul>
+                <% usuarios.forEach(usuario => { %>
+                    <span>Nombre del usuario:</span><br>
+                    <span><%= usuario.nombre %></span><br>
+
+                    <span>Email del usuario:</span><br>
+                    <span><%= usuario.email %></span><br><br><br><br>
+                <% }); %>
+            </ul>
+        </div>
+
+        <div>
+            <h1>Lista de Objetos</h1>
+            <ul>
+                <% objetos.forEach(objeto => { %>
+                    <span>Nombre del objeto:</span><br>
+                    <span><%= objeto.nombre %></span><br>
+
+                    <span>Descripcion del objeto:</span><br>
+                    <span><%= objeto.descripcion %></span><br>
+                    
+                    <span>Foto del objeto:</span><br>
+                    <span><%= objeto.foto %></span><br><br><br><br>
+                <% }); %>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
