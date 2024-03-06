@@ -18,6 +18,9 @@
 
                 <span>Descripcion del objeto:</span><br>
                 <span><%= objeto.descripcion %></span><br><br><br>
+                <form action="/borrar_tarea/<%= userid %>/<%= objeto.id %>" method="post">
+                    <button>BORRAR</button>
+                </form>
             <% }); %>
         </ul>
     </div>

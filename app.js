@@ -32,12 +32,9 @@ app.use('/anadir_tarea', anadir_tareaRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-/*
 app.use(function(req, res) {
   res.status(404).redirect('ver404');
 });
-
-*/
 
 app.use(express.static('public'));
 

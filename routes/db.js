@@ -59,6 +59,11 @@ const objetos_usuario = async (userid) => {
     return todos;
 };
 
+const borrar_objeto_user = async (id) => {
+    console.log(id);
+    await connection.execute('DELETE FROM objetos_usuarios WHERE id = ?', [id]);
+};
+
 module.exports = {
     anadir_user,
     comprobar_user,
@@ -66,5 +71,6 @@ module.exports = {
     actualizar_pass,
     todos_users,
     todos_objetos,
-    objetos_usuario
+    objetos_usuario,
+    borrar_objeto_user
 };
